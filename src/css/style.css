@@ -1,0 +1,105 @@
+body {
+  font-family: 'Open Sans', sans-serif; }
+
+.header {
+  padding-top: 15px;
+  padding-bottom: 15px; }
+  .header-logo {
+    display: flex;
+    align-items: center; }
+    .header-logo__text {
+      margin-left: 15px; }
+
+.menu-list {
+  list-style-type: none; }
+  .menu-list__item {
+    display: inline-block;
+    font-size: 18px;
+    font-weight: 400;
+    margin-right: 37px; }
+  .menu-list__link {
+    text-decoration: none;
+    color: #6c6c6c;
+    display: inline-block;
+    cursor: pointer;
+    position: relative; }
+    .menu-list__link:after {
+      margin-top: 15px;
+      display: block;
+      position: absolute;
+      left: 0;
+      width: 0;
+      height: 2px;
+      background-color: #5094f2;
+      content: '';
+      transition: width 0.3s ease-out; }
+
+.menu-list__link:hover:after {
+  width: 100%; }
+
+.main {
+  padding-top: 38px;
+  position: relative;
+  background: #373737 url(../img/back.jpg) center no-repeat;
+  background-size: cover;
+  color: #ffffff;
+  z-index: 1; }
+  .main-text__title {
+    line-height: 1.3;
+    font-size: 42px; }
+  .main-text__descr {
+    font-size: 27px; }
+  .main-button {
+    color: #ffffff;
+    margin-top: 34px;
+    padding: 11px;
+    border: none;
+    background-color: #5094f2; }
+    .main-button__img {
+      vertical-align: middle; }
+
+.privilege {
+  padding-top: 73px;
+  text-align: center; }
+  .privilege-text__title {
+    margin-top: 28px;
+    color: #5094f2;
+    font-weight: 600;
+    font-size: 18px; }
+  .privilege-text__descr {
+    color: #909090;
+    font-size: 14px; }
+
+.products {
+  margin-top: 91px; }
+  .products-title {
+    font-size: 42px;
+    color: #6f7173; }
+    .products-title-2 {
+      color: #6f7173;
+      font-size: 26px;
+      font-weight: 400; }
+    .products-title__descr {
+      color: #909090;
+      margin-top: 34px;
+      font-size: 15px;
+      font-weight: 400;
+      line-height: 36px; }
+    .products-title__img {
+      margin-top: 33px; }
+
+.footer {
+  margin-top: 50px;
+  border-top: 1px solid #909090; }
+
+.copyright {
+  padding-top: 33px;
+  padding-bottom: 40px;
+  text-align: center;
+  color: #909090;
+  font-size: 15px;
+  font-weight: 300; }
+
+@media screen and (max-width: 576px) {
+  .menu {
+    display: none; } }
